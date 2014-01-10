@@ -20,7 +20,7 @@
   "main": "./index",
   "scripts": {
     "test": "mocha -R spec ./test",
-    "prepublish": "coffee -o ./lib/ -c ./src/ && docco ./src/*"
+    "prepublish": "coffee -o ./lib/ -c ./src/ && docco ./src/*coffee ./src/model/*"
   },
   "dependencies": {
     "jugglingdb": "~0.2.6",

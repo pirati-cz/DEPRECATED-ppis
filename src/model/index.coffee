@@ -90,7 +90,7 @@ class Model
     @Group.hasAndBelongsToMany(@User, { as: 'users', model: 'User', linkTable: 'UserGroup' })
     # group permission n2n
     @Group.hasAndBelongsToMany(@Permission, { as: 'permissions', model: 'Permission', linkTable: 'GroupPermission' })
-    @Permission.hasAndBelongsToMany(@Group, { as: 'users', model: 'Group', linkTable: 'GroupPermission' })
+    @Permission.hasAndBelongsToMany(@Group, { as: 'groups', model: 'Group', linkTable: 'GroupPermission' })
     # user permission n2n
     @User.hasAndBelongsToMany(@Permission, { as: 'permissions', model: 'Permission', linkTable: 'UserPermission' })
     @Permission.hasAndBelongsToMany(@User, { as: 'users', model: 'User', linkTable: 'UserPermission' })
