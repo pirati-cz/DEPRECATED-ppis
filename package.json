@@ -1,0 +1,38 @@
+{
+  "name": "ppis",
+  "version": "0.0.1",
+  "description": "Pirate Party Information System - core model with user, group, permission and auth",
+  "keywords": [
+    "pirate",
+    "party",
+    "information",
+    "system"
+  ],
+  "author": {
+    "name": "Tomáš Klapka",
+    "email": "tomas@klapka.cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:pirati-cz/ppis.git"
+  },
+  "license": "LGPL-3.0+",
+  "main": "./index",
+  "scripts": {
+    "test": "mocha -R spec ./test",
+    "prepublish": "coffee -o ./lib/ -c ./src/ && docco ./src/*"
+  },
+  "dependencies": {
+    "jugglingdb": "~0.2.6",
+    "q": "~1.0.0"
+  },
+  "optionalDependencies": {
+    "jugglingdb-mongodb": "~0.0.4-4"
+  },
+  "devDependencies": {
+    "async": "~0.2.9",
+    "mocha": "~1.16.2",
+    "should": "~2.1.1",
+    "coffee-script": "~1.6.3"
+  }
+}
